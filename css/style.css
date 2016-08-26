@@ -195,12 +195,26 @@
 
 }
 
+@media (max-width:560px){
+  #nav-right{
+    display:none;
+  }
+}
+
 @media (max-width:420px){
 
-  #productsRow1 img{
-    display: block;
+  #productsRow1 img, #productsRow2 img{
     margin: 0 auto;
     width: 70%;
   }
+
+  #productsRow1 img:nth-child(2n+1),   #productsRow2 img:nth-child(2n+1){
+    margin-right: 0px;
+  }
+
+  #productsRow1 img:nth-child(2n),   #productsRow2 img:nth-child(2n){
+    margin-left: 0px;
+  }
+
 
 }
